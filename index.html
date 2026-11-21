@@ -1,144 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pugazhendhi V – Visual Communication Student & Designer</title>
-<style>
-:root{--bg:#07060d;--surf:#110e1f;--line:#2a2345;--tx:#ece9f7;--mute:#9a94b8;--pu:#9b5cff;--cy:#22d3ee;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-*{box-sizing:border-box;margin:0}
-body{background:var(--bg);color:var(--tx);font:16px/1.65 "Space Grotesk","Segoe UI",system-ui,sans-serif}
-#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0}
-nav{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top,0px)) 5vw 12px;background:#07060dcc;backdrop-filter:blur(10px)}
-nav b{font-size:18px}nav b i{color:var(--cy);font-style:normal}
-nav div{display:flex;gap:22px}nav a{color:var(--mute);text-decoration:none;font-size:14px}nav a:hover,a:focus-visible{color:var(--cy);outline:none}
-main{position:relative;z-index:1}
-section{max-width:1100px;margin:auto;padding:110px 5vw 40px}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:90px}
-h1{font-size:clamp(40px,7vw,76px);line-height:1.05;max-width:620px}
-h1 span{background:linear-gradient(90deg,var(--pu),var(--cy));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{max-width:480px;color:var(--mute);margin:18px 0 28px}
-.btn{display:inline-block;padding:12px 26px;border-radius:30px;background:linear-gradient(90deg,var(--pu),var(--cy));color:#07060d;font-weight:700;text-decoration:none;margin-right:10px}
-.btn.o{background:none;color:var(--tx);border:1px solid var(--line)}
-h2{font-size:clamp(28px,4vw,40px);margin-bottom:8px}
-.sub{color:var(--cy);font-size:14px;margin-bottom:6px}
-.lead{max-width:680px;color:var(--mute);margin-bottom:26px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.card{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:22px;transition:transform .15s,border-color .2s;transform-style:preserve-3d}
-.card:hover{border-color:var(--pu)}
-.card h3{font-size:17px;margin-bottom:4px}.card p{color:var(--mute);font-size:14px}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
-.chips span{padding:8px 16px;border:1px solid var(--line);border-radius:30px;background:var(--surf);font-size:14px}
-.chips.s span{border-color:#22d3ee55}
-.tag{display:inline-block;margin:10px 6px 0 0;color:var(--cy);font-size:13px}
-.pj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.pj .card{padding:0;overflow:hidden}
-.pj .art{height:150px;background:linear-gradient(135deg,var(--pu),var(--cy));display:grid;place-items:center;font-size:44px}
-.pj .art.b{background:linear-gradient(135deg,var(--cy),#2b1a5e)}
-.pj .card div:last-child{padding:22px}
-.ct{text-align:center;padding-bottom:80px}.ct .lead{margin:0 auto 24px}
-footer{position:relative;z-index:1;text-align:center;color:var(--mute);font-size:13px;padding:24px 0 40px}
-@media(max-width:640px){nav div{gap:12px}nav a{font-size:12px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
-</style>
-</head>
-<body>
-<canvas id="bg" aria-hidden="true"></canvas>
-<nav><b>Pugazhendhi<i>.</i></b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#software">Software</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
-<main>
-<section class="hero">
-<div class="sub">Chennai, India</div>
-<h1>Hi, I’m <span>Pugazhendhi V</span></h1>
-<p>Visual Communication student, designer and creative thinker. I turn ideas into meaningful visual experiences.</p>
-<div><a class="btn" href="#projects">See my work</a><a class="btn o" href="#contact">Get in touch</a></div>
-</section>
-
-<section id="about">
-<div class="sub">Introduction</div><h2>About me</h2>
-<p class="lead">I’m a passionate Visual Communication student with a strong eye for design and detail. I combine creativity with technical skills in UI/UX, digital marketing, and programming to create meaningful visual experiences.</p>
-<div class="grid">
-<div class="card"><h3>Roles</h3><p>Designer, Creative Thinker, Visual Creator</p></div>
-<div class="card"><h3>Languages</h3><p>Tamil (native)<br>English (proficient)</p></div>
-<div class="card"><h3>Technical</h3><p>HTML, CSS, JavaScript</p></div>
-<div class="card"><h3>Certifications</h3><p>UI/UX Design, Digital Marketing, Cyber Security, Graphics Designing</p></div>
-</div>
-</section>
-
-<section id="skills">
-<div class="sub">What I do</div><h2>Skills</h2>
-<div class="grid">
-<div class="card"><h3>Photography</h3><p>Framing light and moments.</p></div>
-<div class="card"><h3>Videography</h3><p>Moving stories, shot with intent.</p></div>
-<div class="card"><h3>Video Editing</h3><p>Pace, cuts and mood.</p></div>
-<div class="card"><h3>Content Creation</h3><p>Visuals built for an audience.</p></div>
-<div class="card"><h3>UI/UX Design</h3><p>Clear, usable interfaces.</p></div>
-<div class="card"><h3>Graphic Design</h3><p>Type, colour and layout.</p></div>
-<div class="card"><h3>Visual Storytelling</h3><p>Ideas told through images.</p></div>
-<div class="card"><h3>Digital Marketing</h3><p>Reaching people online.</p></div>
-</div>
-</section>
-
-<section id="software">
-<div class="sub">My toolkit</div><h2>Software</h2>
-<div class="chips s"><span>Premiere Pro</span><span>After Effects</span><span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>Canva</span><span>CapCut</span><span>Blender</span><span>DaVinci Resolve</span><span>Filmora</span></div>
-</section>
-
-<section id="projects">
-<div class="sub">My work</div><h2>Projects</h2>
-<div class="pj">
-<div class="card"><div class="art">🌐</div><div><h3>Portfolio Website</h3><p>A personal site that presents my design and creative work.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></div>
-<div class="card"><div class="art b">📱</div><div><h3>Mobile App UI Redesign</h3><p>A redesign of a mobile app interface for clearer, easier use.</p><span class="tag">Figma</span></div></div>
-</div>
-</section>
-
-<section id="contact" class="ct">
-<div class="sub">Get in touch</div><h2>Contact</h2>
-<p class="lead">Have a project or an idea? Send me an email.</p>
-<a class="btn" href="mailto:pugazhendhiv5@gmail.com">pugazhendhiv5@gmail.com</a>
-</section>
-</main>
-<footer>© 2026 Pugazhendhi V · Chennai, India</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
-(function(){
-try{
-const cv=document.getElementById('bg'),R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
-R.setPixelRatio(Math.min(devicePixelRatio,2));
-const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(55,1,.1,200);C.position.z=9;
-// stars
-const n=1800,p=new Float32Array(n*3);
-for(let i=0;i<n*3;i++)p[i]=(Math.random()-.5)*60;
-const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(p,3));
-const stars=new THREE.Points(sg,new THREE.PointsMaterial({color:0xb9a6ff,size:.05}));S.add(stars);
-// hero object: wireframe knot + glowing core + ring
-const g=new THREE.Group(),pu=0x9b5cff,cy=0x22d3ee;
-g.add(new THREE.Mesh(new THREE.TorusKnotGeometry(1.5,.42,160,20),new THREE.MeshStandardMaterial({color:pu,metalness:.7,roughness:.25})));
-const wf=new THREE.Mesh(new THREE.IcosahedronGeometry(2.7,1),new THREE.MeshBasicMaterial({color:cy,wireframe:true,transparent:true,opacity:.25}));g.add(wf);
-const ring=new THREE.Mesh(new THREE.TorusGeometry(3.3,.02,8,100),new THREE.MeshBasicMaterial({color:cy}));ring.rotation.x=1.2;g.add(ring);
-S.add(g,new THREE.AmbientLight(0xffffff,.4));
-const l1=new THREE.PointLight(pu,2,50);l1.position.set(-5,4,6);const l2=new THREE.PointLight(cy,2,50);l2.position.set(6,-3,5);S.add(l1,l2);
-let mx=0,my=0;
-addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
-function fit(){const w=innerWidth,h=innerHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();
-const wide=w>820;g.position.x=wide?3.2:0;g.position.y=wide?0:2.6;g.scale.setScalar(wide?1:.55)}
-fit();addEventListener('resize',fit);
-const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
-function loop(){
-const sy=scrollY/innerHeight;
-if(!still){g.rotation.y+=.004;g.rotation.x+=.002;stars.rotation.y+=.0004}
-g.rotation.x+=(my*.6-(g.rotation.x%6.283)*0)*.002;
-C.position.x+=(mx*1.2-C.position.x)*.04;C.position.y+=(-my*1.2-sy*2-C.position.y)*.04;
-C.lookAt(0,-sy*2,0);
-R.render(S,C);requestAnimationFrame(loop)}
-loop();
-}catch(e){console.warn('3D unavailable',e)}
-// card tilt
-document.querySelectorAll('.card').forEach(c=>{
-c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${x*12}deg) rotateX(${-y*12}deg)`});
-c.addEventListener('pointerleave',()=>c.style.transform='')});
-})();
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pugazhendhi V — Visual Creator, Visual Communication student from Chennai, India. A sunlit editorial 3D scroll-journey portfolio: identity, about, skills, projects, toolkit, contact." />
+    <meta name="theme-color" content="#FAF6EF" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Pugazhendhi V — Visual Creator</title>
+    <script type="module" crossorigin src="./assets/index-uis9WmEh.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Z-Bc3_zo.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
